@@ -11,12 +11,12 @@ function setup() {
     viscositySlider = createSlider(0, 0.1, 0.02, 0.01);
     viscositySlider.position(10, 30);
     viscositySlider.style('width', '200px');
-    createLabel("Longueur d'animation", 10, 10);
+    createLabel("Animation length", 10, 10);
 
     densitySlider = createSlider(0, 1, 0.5, 0.1);
     densitySlider.position(10, 80);
     densitySlider.style('width', '200px');
-    createLabel('Densité', 10, 60);
+    createLabel('Density', 10, 60);
 
     turbulenceSlider = createSlider(0, 1, 0.5, 0.1);
     turbulenceSlider.position(10, 130);
@@ -26,17 +26,17 @@ function setup() {
     speedSlider = createSlider(0, 10, 1, 0.1);
     speedSlider.position(10, 180);
     speedSlider.style('width', '200px');
-    createLabel("Vitesse d'animation", 10, 160);
+    createLabel("Animation speed", 10, 160);
 
     colorPicker = createColorPicker('#ff0000');
     colorPicker.position(10, 220);
-    createLabel('Couleur', 10, 200);
+    createLabel('Color', 10, 200);
 
     brushTypeSelector = createSelect();
     brushTypeSelector.position(10, 270);
-    brushTypeSelector.option('Rond');
-    brushTypeSelector.option('Carré');
-    brushTypeSelector.selected('Rond');
+    brushTypeSelector.option('Round');
+    brushTypeSelector.option('Square');
+    brushTypeSelector.selected('Round');
     createLabel('Type de dessin', 10, 250);
 
     brushSizeSlider = createSlider(5, 50, 15, 1);
@@ -44,11 +44,11 @@ function setup() {
     brushSizeSlider.style('width', '200px');
     createLabel('Epaisseur', 10, 300);
 
-    clearButton = createButton('Tout effacer');
+    clearButton = createButton('Clear');
     clearButton.position(10, 370);
     clearButton.mousePressed(() => background(255));
 
-    saveButton = createButton('Télécharger');
+    saveButton = createButton('Download');
     saveButton.position(10, 400);
     saveButton.mousePressed(() => saveCanvas('myPainting', 'png'));
 }
@@ -107,9 +107,9 @@ class FluidParticle {
 
     display() {
         fill(this.color.levels[0], this.color.levels[1], this.color.levels[2], this.lifespan);
-        if (this.brushType === 'Rond') {
+        if (this.brushType === 'Round') {
             ellipse(this.pos.x, this.pos.y, this.size, this.size);
-        } else if (this.brushType === 'Carré') {
+        } else if (this.brushType === 'Square') {
             rect(this.pos.x, this.pos.y, this.size, this.size);
         }
     }
