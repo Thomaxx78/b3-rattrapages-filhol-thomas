@@ -34,8 +34,8 @@ Pour utiliser ou modifier ce projet, suivez les étapes ci-dessous :
 
 1. **Cloner le dépôt** :
     ```sh
-    git clone https://github.com/votre-utilisateur/peinture-fluide.git
+    git clone git@github.com:Thomaxx78/b3-rattrapages-filhol-thomas.git
     ```
 
 2. **Ouvrir le fichier HTML** :
-    Ouvrez `dessin.html` dans votre navigateur préféré.
+    Ouvrez `index.html` dans votre navigateur préféré.
