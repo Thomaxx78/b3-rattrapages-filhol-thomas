@@ -39,3 +39,6 @@ Pour utiliser ou modifier ce projet, suivez les étapes ci-dessous :
 
 2. **Ouvrir le fichier HTML** :
     Ouvrez `index.html` dans votre navigateur préféré.
+
+video 1ere partie : https://www.loom.com/share/f6bcecf84c944510a6b374a358deebdf?sid=d1effebf-3631-442b-bc85-d52e6c834ae5
+video 2eme partie : https://www.loom.com/share/75f2758c5c3149598746bd5567212c54?sid=f2d2221b-e683-4746-9ec6-7424ce8c1017
